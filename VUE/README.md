@@ -1,35 +1,22 @@
 # NoStore
 
-This template should help get you started developing with Vue 3 in Vite.
+## Route tips
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+### For disable the Header in specific page
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+{
+      path: '/path',
+      name: 'name',
+      component: component,
+      
+      ************************
+      * meta: {              *
+      *  disableHeader: true *
+      * }                    *
+      ************************
+},
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
+## Run esLint
 ```sh
 npm run lint
 ```

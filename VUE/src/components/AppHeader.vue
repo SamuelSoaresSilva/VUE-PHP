@@ -6,7 +6,7 @@ import { ref, watch } from 'vue'
   const active = ref()
 
   watch($route,()=>{
-     active.value = $route.meta.headerActive
+      active.value = !$route.meta.disableHeader
       console.log(active.value);
   })
 
