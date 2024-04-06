@@ -11,7 +11,23 @@ watch($route,()=>{
 
 </script>
 <template>
-    <header v-if="active">
-        Header
+    <header
+      v-if="active"
+      class="roboto-bold d-flex align-items-center justify-content-between"
+    >
+      <h1>
+        NoStore
+      </h1>
+      <nav class="d-flex gap-2">
+        <button class="btn bi-search">
+
+        </button>
+        <button>
+
+        </button>
+        <button>
+
+        </button>
+      </nav>
     </header>
 </template>

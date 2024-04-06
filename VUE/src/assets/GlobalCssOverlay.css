@@ -13,3 +13,10 @@
     font-weight: 700;
     font-style: normal;
 }
+.btn{
+    transition: 0.2s linear;
+}
+.btn:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.13);
+}

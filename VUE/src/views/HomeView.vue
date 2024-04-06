@@ -3,5 +3,7 @@
 </script>
 
 <template>
-    Home
+    <body>
+      <img src="../assets/headerBackGround.jpg" />
+    </body>
 </template>
