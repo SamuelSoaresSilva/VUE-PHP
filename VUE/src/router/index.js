@@ -12,7 +12,10 @@ const routes = createRouter({
     {
       path: '/home',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta:{
+        headerActive: false,
+      }
     },
     {
       path: '/about',
