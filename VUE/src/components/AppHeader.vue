@@ -5,14 +5,13 @@ import { ref, watch } from 'vue'
   const $route = useRoute();
   const active = ref()
 
-  watch($route,()=>{
+watch($route,()=>{
       active.value = !$route.meta.disableHeader
-      console.log(active.value);
-  })
+})
 
 </script>
 <template>
-    <section v-if="active">
+    <header v-if="active">
         Header
-    </section>
+    </header>
 </template>
