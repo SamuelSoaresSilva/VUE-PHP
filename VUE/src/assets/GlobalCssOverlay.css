@@ -13,16 +13,27 @@
 }
 
 /* buttons */
-.btn{
+header .btn{
+    border-radius: 0;
     color: white;
     transition: 0.2s linear;
 }
 .btn:hover{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: #dfa2ad;
 }
-
+/* Global tags */
 a{
     color: currentColor;
     text-decoration: none;
+}
+.entire-page-container{
+    height: 100vh;
+    width: 100%;
+}
+/*Header*/
+.header-title{
+    transition: 0.2s linear;
+}
+.header-title:hover, .header .btn:hover{
+    color: #dfa2ad;
 }
