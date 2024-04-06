@@ -22,11 +22,17 @@ const routes = createRouter({
       path: '/home',
       name: 'home',
       component: HomeView,
+      meta:{
+        title: 'NoStore'
+      }
     },
     {
       path: '/about',
       name: 'about',
-      component: AboutView
+      component: AboutView,
+      meta:{
+        title: 'About'
+      }
     }
   ]
 });
