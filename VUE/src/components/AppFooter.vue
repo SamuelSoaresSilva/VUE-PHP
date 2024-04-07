@@ -35,6 +35,11 @@ watch($route,()=>{
             >
               Register
             </router-link>
+            <router-link :to="{ name: 'cart' }"
+                         class="link"
+            >
+              Cart
+            </router-link>
           </div>
         </nav>
         <nav class="col bg-light">

@@ -34,15 +34,17 @@ watch($route,()=>{
       <nav class="d-flex">
         <button class="btn bi-search"/>
 
-        <button class="btn bi-bag">
+        <router-link
+          class="btn bi-bag"
+          :to="{name: 'cart'}"
+        />
 
-        </button>
         <router-link
           class="btn"
         :class="logged ? 'bi-box-arrow-left' : 'bi-box-arrow-in-right'"
         :to="{name: 'user-register'}"
-        >
-        </router-link>
+        />
+
       </nav>
     </header>
 </template>
