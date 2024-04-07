@@ -4,7 +4,7 @@
 
 <template>
   <section class="section-100">
-    <section class="bg-dark p-4">
+    <section class="bg-dark p-4 w-100">
       <br>
     </section>
     <slot/>

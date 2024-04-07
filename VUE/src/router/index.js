@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import AboutView from '@/views/AboutView.vue';
 import NotFound from '@/components/utiils/NotFound.vue'
 import RegisterView from '@/views/user/RegisterLoginView.vue'
-import CartView from '@/views/cart/CartView.vue'
+import CartView from '@/views/CartView.vue'
 
 // for disableHeader use meta:{disableHeader:true}
 
@@ -40,7 +40,8 @@ const routes = createRouter({
       name: 'about',
       component: AboutView,
       meta:{
-        title: 'About'
+        title: 'About',
+        disableFooter: true
       }
 
     },

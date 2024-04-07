@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@/assets/GlobalCssOverlay.css'
 import '@/assets/GlobalBackgroundGIf.css'
 
+
 const app = createApp(App)
 
 app.use(router)

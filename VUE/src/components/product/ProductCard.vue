@@ -3,25 +3,30 @@
 </script>
 
 <template>
-  <div class="d-inline-block p-0">
-    <div>
-      <img
-        :src="image" :alt="name+' image'"
-        class="w-100"
-      >
-    </div>
-    <div class="bg-dark-subtle d-flex flex-column p-2 w-100">
-      <span class="roboto-bold">
-        {{props.name}}
-      </span>
-      <span class="text-end">
-        R$ {{ props.price }}
-      </span>
-    </div>
-  </div>
+    <a href="#">
+      <div>
+        <div class="card">
+          <img
+            :src="image" :alt="name+' image'"
+            class="object-fit-cover"
+          >
+        </div>
+        <div class="roboto-bold border bg-dark d-flex flex-column px-3 py-2 text-light">
+          <span class="">
+            {{props.name}}
+          </span>
+          <span class="text-end">
+            R$ {{ props.price }}
+          </span>
+        </div>
+      </div>
+    </a>
 </template>
 
 <style scoped>
 
+.card{
+  width: 16rem;
+}
 
 </style>
