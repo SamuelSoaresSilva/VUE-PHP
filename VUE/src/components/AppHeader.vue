@@ -3,20 +3,24 @@ import '@/assets/AppHeader.css';
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
 import { useAddLetter } from '@/composables/useAddLetter.js'
+import AppTitleButton from '@/components/AppTitleButton.vue'
 
   const $route = useRoute();
   const active = ref()
+  const logged = ref(true);
 
   const {
     addLetter,
-    headerTitle,
+    msg
   } = useAddLetter();
 
 watch($route,()=>{
-      active.value = !$route.meta.disableHeader;
-      const title = ref('');
-      title.value = $route.meta.title;
-      addLetter(title.value);
+    active.value = !$route.meta.disableHeader;
+  if (active.value !== false){
+    const title = ref('');
+    title.value = $route.meta.title;
+    addLetter(title.value);
+  }
 })
 
 
@@ -25,23 +29,18 @@ watch($route,()=>{
     <header
       v-if="active"
       class="roboto-bold d-flex align-items-center justify-content-between header z-3 px-4 py-2 text-light"
-
     >
-      <router-link
-        :to="{ name: 'home' }"
-        class="fs-1"
-      >
-        [ {{ headerTitle }} ].
-      </router-link>
-
-      <nav class="d-flex gap-2">
+      <AppTitleButton :title=" msg || 'Title' "></AppTitleButton>
+      <nav class="d-flex">
         <button class="btn bi-search"/>
 
-        <button class="btn">
-          teste
-        </button>
-        <button class="btn">
+        <button class="btn bi-bag">
 
+        </button>
+        <button
+          class="btn"
+        :class="logged ? 'bi-box-arrow-left' : 'bi-box-arrow-in-right'"
+        >
         </button>
       </nav>
     </header>

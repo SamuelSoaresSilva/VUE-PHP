@@ -1,6 +1,7 @@
 <script setup>
 import { useAddLetter } from '@/composables/useAddLetter.js'
 import { onMounted } from 'vue'
+import AppTitleButton from '@/components/AppTitleButton.vue'
 
 const {
   addLetter,
@@ -14,12 +15,8 @@ onMounted(() => addLetter(message))
 
 <template>
   <section class="background-gif ">
-      <div class="blur-container d-flex entire-page-container align-items-center justify-content-center text-light">
-        <router-link class="roboto-bold fs-1 header-title"
-        :to="{ name: 'home' }"
-        >
-          [ {{ msg }} ].
-        </router-link>
+      <div class="blur-container d-flex entire-page-container align-items-center justify-content-center text-light roboto-bold">
+        <AppTitleButton :title=" msg || 'Title' "></AppTitleButton>
       </div>
   </section>
 </template>

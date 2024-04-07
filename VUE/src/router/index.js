@@ -14,7 +14,7 @@ const routes = createRouter({
     },
     {
       path: '/:pathMatch(.*)*',
-      name: 'NotFound',
+      name: 'notFound',
       component: NotFound,
       meta:{ disableHeader: true, disableFooter: true}
     },
