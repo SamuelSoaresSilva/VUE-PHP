@@ -1,6 +1,10 @@
+<script setup>
+import AppViewPage from '@/components/AppViewPage.vue'
+</script>
+
 <template>
-  
-    <h1>This is an about page</h1>
-  
+  <AppViewPage>
+    about
+  </AppViewPage>
 </template>
 

@@ -1,0 +1,12 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2rem);
+}
+.header-title{
+    transition: 0.2s linear;
+}
+.header-title:hover, .header .btn:hover{
+    color: #dfa2ad;
+}
