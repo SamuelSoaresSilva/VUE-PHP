@@ -19,16 +19,21 @@ watch($route,()=>{
         </div>
         <nav class="col bg-light">
           <div class="d-flex flex-column">
-            <span class="fs-2">Application Screens</span>
+            <span class="fs-2">Pages</span>
             <router-link :to="{ name: 'about' }"
             class="link"
             >
-              About page
+              About
             </router-link>
             <router-link :to="{ name: 'notFound' }"
             class="link"
             >
-              Not found Page
+              Not found
+            </router-link>
+            <router-link :to="{ name: 'user-register' }"
+                         class="link"
+            >
+              Register
             </router-link>
           </div>
         </nav>

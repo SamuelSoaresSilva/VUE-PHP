@@ -37,11 +37,12 @@ watch($route,()=>{
         <button class="btn bi-bag">
 
         </button>
-        <button
+        <router-link
           class="btn"
         :class="logged ? 'bi-box-arrow-left' : 'bi-box-arrow-in-right'"
+        :to="{name: 'user-register'}"
         >
-        </button>
+        </router-link>
       </nav>
     </header>
 </template>

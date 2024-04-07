@@ -1,0 +1,8 @@
+.background-gif{
+    /*scopped -> background-image: url("@/assets/images/backgroundGif.gif");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blur-container{
+    backdrop-filter: blur(3rem);
+}

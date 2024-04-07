@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
 import AboutView from '@/views/AboutView.vue';
 import NotFound from '@/components/utiils/NotFound.vue'
+import RegisterView from '@/views/user/RegisterLoginView.vue'
 
 // for disableHeader use meta:{disableHeader:true}
 
@@ -32,6 +33,17 @@ const routes = createRouter({
       component: AboutView,
       meta:{
         title: 'About'
+      }
+    },
+    {
+      path: '/user/register',
+      name: 'user-register',
+      component: RegisterView,
+      meta:{
+        title: 'Register',
+        disableHeader: true,
+        disableFooter: true
+
       }
     }
   ]

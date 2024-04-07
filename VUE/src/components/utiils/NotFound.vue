@@ -2,6 +2,7 @@
 import { useAddLetter } from '@/composables/useAddLetter.js'
 import { onMounted } from 'vue'
 import AppTitleButton from '@/components/AppTitleButton.vue'
+import AppBackgroundGif from '@/components/AppBackgroundGif.vue'
 
 const {
   addLetter,
@@ -14,20 +15,14 @@ onMounted(() => addLetter(message))
 </script>
 
 <template>
-  <section class="background-gif">
-      <div class="blur-container d-flex entire-page-container align-items-center justify-content-center text-light roboto-bold">
-        <AppTitleButton :title=" msg || 'Title' "></AppTitleButton>
-      </div>
-  </section>
+   <app-background-gif>
+     <AppTitleButton :title=" msg || 'Title' "></AppTitleButton>
+   </app-background-gif>
 </template>
 
 <style scoped>
 .background-gif{
   background-image: url("@/assets/images/backgroundGif.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.blur-container{
-  backdrop-filter: blur(3rem);
-}
+
 </style>

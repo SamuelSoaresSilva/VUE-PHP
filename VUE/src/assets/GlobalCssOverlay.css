@@ -26,6 +26,12 @@ a{
     color: currentColor;
     text-decoration: none;
 }
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
 .entire-page-container{
     height: 100vh;
     width: 100%;
