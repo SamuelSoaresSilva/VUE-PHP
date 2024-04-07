@@ -14,12 +14,13 @@ onMounted(() => addLetter(message))
 </script>
 
 <template>
-  <section class="background-gif ">
+  <section class="background-gif">
       <div class="blur-container d-flex entire-page-container align-items-center justify-content-center text-light roboto-bold">
         <AppTitleButton :title=" msg || 'Title' "></AppTitleButton>
       </div>
   </section>
 </template>
+
 <style scoped>
 .background-gif{
   background-image: url("@/assets/images/backgroundGif.gif");
