@@ -9,6 +9,7 @@ import AppTitleButton from '@/components/AppTitleButton.vue'
   const active = ref()
   const logged = ref(true);
 
+
   const {
     addLetter,
     msg
@@ -34,14 +35,20 @@ watch($route,()=>{
       <nav class="d-flex">
         <button class="btn bi-search"/>
 
-        <button class="btn bi-bag">
+        <router-link
+          class="btn bi-bag"
+          :to="{name: 'cart'}"
+        >
+        </router-link>
 
-        </button>
-        <button
+        <router-link
           class="btn"
         :class="logged ? 'bi-box-arrow-left' : 'bi-box-arrow-in-right'"
-        >
-        </button>
+        :to="{name: 'user-register'}"
+        />
       </nav>
     </header>
 </template>
+<style scoped>
+
+</style>

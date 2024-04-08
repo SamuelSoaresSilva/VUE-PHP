@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(3rem);
 }
 .header-title{
     transition: 0.2s linear;
