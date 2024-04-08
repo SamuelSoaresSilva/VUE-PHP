@@ -5,7 +5,9 @@ const props = defineProps(['title'])
 <template>
   <div class="p-4">
     <span class="fs-2 roboto-bold">
-    {{ props.title}}
+      <strong>
+        {{ props.title}}
+      </strong>
     </span>
     <section class="products-container d-flex">
       <div class="d-flex overflow-x-scroll">

@@ -27,22 +27,22 @@ watch($route,()=>{
           <div class="d-flex flex-column">
             <span class="fs-2">Pages</span>
             <router-link :to="{ name: 'about' }"
-            class="link"
+            class="link playfair-display fw-bolder"
             >
-              About
+              About.
             </router-link>
             <router-link :to="{ name: 'notFound' }"
-            class="link"
+            class="link fw-light"
             >
               Not found
             </router-link>
             <router-link :to="{ name: 'user-register' }"
                          class="link"
             >
-              Register
+              [ Register ].
             </router-link>
             <router-link :to="{ name: 'cart' }"
-                         class="link"
+                         class="link fw-bolder"
             >
               Cart
             </router-link>
