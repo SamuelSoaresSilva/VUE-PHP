@@ -108,13 +108,10 @@ const produtcs = [
           @dragstart.prevent
         >
       <products-container title="Products 1">
-        <ProductCard v-for="product in produtcs" :key="product.id" :name="product.nome" :price="product.preco" :image="product.imagem"/>
+
+        <ProductCard v-for="product in produtcs" :key="product.id" :name="product.nome" :price="product.preco" :image="product.imagem" :id="product.id"/>
+
       </products-container>
-      <products-container title="Products 2">
-        <ProductCard v-for="product in produtcs" :key="product.id" :name="product.nome" :price="product.preco" :image="product.imagem"/>
-      </products-container>
-      <products-container title="Products 3">
-        <ProductCard v-for="product in produtcs" :key="product.id" :name="product.nome" :price="product.preco" :image="product.imagem"/>
-      </products-container>
+
     </AppViewPage>
 </template>

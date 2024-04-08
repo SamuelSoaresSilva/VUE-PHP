@@ -4,6 +4,7 @@ import AboutView from '@/views/AboutView.vue';
 import NotFound from '@/components/utiils/NotFound.vue'
 import RegisterView from '@/views/user/RegisterLoginView.vue'
 import CartView from '@/views/CartView.vue'
+import ProductView from "@/views/ProductView.vue";
 
 // for disableHeader use meta:{disableHeader:true}
 
@@ -11,21 +12,18 @@ const routes = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-
       path: '',
       redirect: '/home'
-
     },
-    {
 
+    {
       path: '/:pathMatch(.*)*',
       name: 'notFound',
       component: NotFound,
       meta:{ disableHeader: true, disableFooter: true}
-
     },
-    {
 
+    {
       path: '/home',
       name: 'home',
       component: HomeView,
@@ -34,8 +32,8 @@ const routes = createRouter({
       }
 
     },
-    {
 
+    {
       path: '/about',
       name: 'about',
       component: AboutView,
@@ -43,10 +41,9 @@ const routes = createRouter({
         title: 'About',
         disableFooter: true
       }
-
     },
-    {
 
+    {
       path: '/user/register',
       name: 'user-register',
       component: RegisterView,
@@ -55,8 +52,8 @@ const routes = createRouter({
         disableHeader: true,
         disableFooter: true
       }
-
     },
+
       {
       //transform userId in variable with :userId
       path: '/userId/cart',
@@ -65,8 +62,15 @@ const routes = createRouter({
       meta:{
         title: 'Cart'
       }
-
     },
+    {
+      path: '/product/:id',
+      name: 'product-page',
+      component: ProductView,
+      meta:{
+        title: 'Product'
+      }
+    }
   ]
 });
 
