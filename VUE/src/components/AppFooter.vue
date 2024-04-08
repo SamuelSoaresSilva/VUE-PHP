@@ -18,6 +18,12 @@ watch($route,()=>{
           <AppTitleButton title="NoStore"/>
         </div>
         <nav class="col bg-light">
+          <span class="fs-2">Repository</span>
+          <div>
+            <a href="https://github.com/SamuelSoaresSilva/VUE-PHP" target="_blank" class="bi-github header-title fs-1"></a>
+          </div>
+        </nav>
+        <nav class="col bg-light">
           <div class="d-flex flex-column">
             <span class="fs-2">Pages</span>
             <router-link :to="{ name: 'about' }"
@@ -40,12 +46,6 @@ watch($route,()=>{
             >
               Cart
             </router-link>
-          </div>
-        </nav>
-        <nav class="col bg-light">
-          <span class="fs-2">Repository</span>
-          <div>
-            <a href="https://github.com/SamuelSoaresSilva/VUE-PHP" target="_blank" class="bi-github header-title fs-1"></a>
           </div>
         </nav>
       </div>
