@@ -6,9 +6,9 @@ const props = defineProps(['name','description','price','quantity','category','i
 
 <template>
   <section>
-    <section>
-      <div class="p-2 w-50 images-container d-flex">
-          <img v-for="imageFromArray in props.image" :key="imageFromArray" :src=imageFromArray class="p-2 img" alt="Not found" />
+    <section class="p-4">
+      <div class="overflow-x-scroll w-100 images-container d-flex align-items-center">
+          <img v-for="imageFromArray in props.image" :key="imageFromArray" :src=imageFromArray class="w-75 img-fluid" alt="Not found" @dragstart.prevent/>
       </div>
 
 
@@ -70,15 +70,12 @@ const props = defineProps(['name','description','price','quantity','category','i
 section{
   padding: 0;
 }
-.img{
-  max-width: 30rem;
+
+.images-container::-webkit-scrollbar{
+  height: 0.3rem;
 }
-@media screen and (max-width: 1300px) {
-  .img{
-    max-width: 20rem;
-  }
-  .images-container{
-    overflow-x: scroll ;
-  }
+.images-container::-webkit-scrollbar-thumb{
+  background-color: black;
 }
+
 </style>
