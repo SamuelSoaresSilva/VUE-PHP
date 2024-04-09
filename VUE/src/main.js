@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import '@/assets/GlobalCssOverlay.css'
 import '@/assets/GlobalBackgroundGIf.css'
-
+import  '@/assets/GlobalForm.css'
 
 const app = createApp(App)
 

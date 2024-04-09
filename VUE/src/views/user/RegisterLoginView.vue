@@ -3,12 +3,12 @@ import AppBackgroundGif from '@/components/AppBackgroundGif.vue'
 import { onMounted, ref, watch } from 'vue'
 import { useAddLetter } from '@/composables/useAddLetter.js'
 import UserRegisterForm from '@/components/user/UserRegisterForm.vue'
-import UserLoginForm from '@/components/user/UserLoginForm.vue'
 import AppTitleButton from '@/components/AppTitleButton.vue'
+import UserLoginForm from '@/components/user/UserLoginForm.vue'
 
 const havesAccount = ref(false);
-const loginMsg = ref("Already have an account? \nLog in by clicking below")
-const registerMsg = ref("Have no account yet? \n  Create by clicking below")
+const loginMsg = ref("Already have an account? \nLog in by clicking below.")
+const registerMsg = ref("Have no account yet? \n  Create by clicking below.")
 const showMsg = ref(havesAccount.value ? registerMsg.value : loginMsg.value)
 const {
   addLetter,
@@ -31,16 +31,18 @@ watch(havesAccount,() => {
         <span class="d-flex">
           {{ showMsg }}
         </span>
-
-        <button @click="havesAccount = !havesAccount">
-          <span class="fs-1 roboto-bold switch-button">
+        <section class="btn-section">
+          <button @click="havesAccount = !havesAccount" class="p-0 ">
+          <span class="fs-1 roboto-bold switch-button m-0">
             [ {{ msg }} ].
           </span>
         </button>
+        </section>
 
       </section>
       <section class="col bg-dark bg-opacity-50 rounded-4 p-4 align-content-center">
-        <UserRegisterForm/>
+        <UserRegisterForm v-if="!havesAccount"/>
+        <UserLoginForm v-else/>
       </section>
     </section>
     <br>
@@ -56,10 +58,14 @@ watch(havesAccount,() => {
   backdrop-filter: blur(2rem);
 }
 .switch-button{
+
   transition: linear 0.2s;
   color: rgb(248, 249, 250);
 }
 .switch-button:hover{
   color: #dfa2ad;
+}
+.btn-section{
+  min-width: 10rem;
 }
 </style>

@@ -1,0 +1,38 @@
+.custom-input {
+    color: white;
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remover a borda padrão */
+    border-bottom: 1px solid #ffffff; /* Linha branca na parte inferior */
+    border-radius: 0; /* Remover o arredondamento */
+    padding: 0;
+    box-shadow: none; /* Remover sombra */
+    outline: none; /* Remover contorno ao focar */
+}
+.custom-select {
+    color: #ffffff; /* Cor do texto */
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remover a borda padrão */
+    border-bottom: 1px solid #ffffff; /* Linha branca na parte inferior */
+}
+.custom-input:focus {
+    color: white;
+    border-color: #ffffff; /* Cor da linha inferior ao focar */
+    box-shadow: none; /* Remover sombra ao focar */
+}
+.custom-select:focus{
+    color: white;
+    border-color: #ffffff; /* Cor da linha inferior ao focar */
+    box-shadow: none; /* Remover sombra ao focar */
+}
+.custom-input:focus-visible {
+    background-color: transparent; /* Manter o fundo transparente ao focar */
+}
+.custom-input{
+    color: #ffffff; /* Cor do texto digitado */
+}
+.custom-select option {
+    background-color: #000000; /* Cor de fundo das opções */
+}
+.date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
