@@ -10,7 +10,7 @@ const props = defineProps(['title'])
       </strong>
     </span>
     <section class="products-container d-flex">
-      <div class="d-flex overflow-x-scroll">
+      <div class="d-flex overflow-x-scroll products">
         <slot/>
       </div>
     </section>
@@ -18,6 +18,10 @@ const props = defineProps(['title'])
 </template>
 
 <style scoped>
-
-
+.products::-webkit-scrollbar{
+  height: 0.5rem;
+}
+.products::-webkit-scrollbar-thumb{
+  background-color: grey;
+}
 </style>
