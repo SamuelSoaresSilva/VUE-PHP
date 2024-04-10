@@ -1,5 +1,6 @@
 <script setup>
 import AppViewPage from '@/components/AppViewPage.vue'
+import CartPageCard from '@/components/Cart/CartPageCard.vue'
 
 </script>
 
@@ -11,6 +12,9 @@ import AppViewPage from '@/components/AppViewPage.vue'
     alt="background"
     @dragstart.prevent
   >
+  <cart-page-card>
+
+  </cart-page-card>
 
 </app-view-page>
 </template>

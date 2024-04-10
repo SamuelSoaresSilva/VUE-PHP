@@ -16,7 +16,7 @@
         >
       </div>
       <div class="roboto-bold border bg-dark d-flex flex-column px-3 py-2 text-light">
-          <span class="max">
+          <span>
             {{ props.name }}
           </span>
         <span class="text-end">

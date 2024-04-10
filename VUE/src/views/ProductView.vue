@@ -31,8 +31,10 @@ const product = {
                        :description="product.descricao"
                        :id="product.id"
     >
-
     </product-page-card>
+    <button class="btn mx-3 px-1 fs-4 roboto-bold">
+      [ Add to cart ].
+    </button>
   </AppViewPage>
 </template>
 
