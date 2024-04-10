@@ -5,11 +5,6 @@
       <input type="text" v-model="editedUser.nome" id="editNome" name="editNome" class="form-control custom-input" required>
     </div>
 
-    <div class="col-md-4">
-      <label for="editDataNascimento" class="form-label">Birthday:</label>
-      <input type="date" v-model="editedUser.dataNascimento" id="editDataNascimento" name="editDataNascimento" class="form-control custom-input date-input" required>
-    </div>
-
     <div class="col-md-6">
       <label for="editEmail" class="form-label">E-mail:</label>
       <input type="email" v-model="editedUser.email" id="editEmail" name="editEmail" class="form-control custom-input" required>
