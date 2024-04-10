@@ -33,7 +33,7 @@ watch($route,()=>{
     >
       <AppTitleButton :title=" msg || 'Title' "></AppTitleButton>
       <nav class="d-flex">
-        <button class="btn bi-search"/>
+        <router-link class="btn bi-search" :to="{name: 'notFound'}"/>
 
         <router-link
           class="btn bi-bag"

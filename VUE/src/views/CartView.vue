@@ -6,7 +6,7 @@ import ProductCartCard from '@/components/product/ProductCartCard.vue'
 const produtos = [
   {
     id: 1,
-    nome: "Camiseta Branca",
+    nome: "Camiseta ",
     descricao: "Camiseta básica na cor branca",
     preco: 29.99,
     quantidadeEstoque: 50,
@@ -22,6 +22,7 @@ const produtos = [
     categoria: "Roupas",
     imagem: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/84577983-c8a2-497a-a74a-a29b9f0c766d/blazer-mid-77-little-kids-shoes-8sxC3j.png"
   },
+
 ]
 </script>
 

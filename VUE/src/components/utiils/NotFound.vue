@@ -22,7 +22,7 @@ onMounted(() => addLetter(message))
 
 <style scoped>
 .background-gif{
-  background-image: url("@/assets/images/backgroundGif.gif");
+  background-image: url("@/assets/images/aboutBackgroundGif.gif");
 }
 
 </style>

@@ -13,6 +13,7 @@
         <img
             :src="image" :alt="name+' image'"
             class="object-fit-cover"
+            @dragstart.prevent
         >
       </div>
       <div class="roboto-bold border bg-dark d-flex flex-column px-3 py-2 text-light">

@@ -1,6 +1,6 @@
 <script setup>
-  
-  </script>
+
+</script>
 
 <template>
     <div class="py-4">
@@ -10,16 +10,15 @@
           <label for="email" >E-mail:</label>
           <input type="email" v-model="email" id="email" name="email" class="form-control custom-input" required>
         </div>
-  
+
         <div class="col pb-3">
-          <label for="senha" >Password:</label>
-          <input type="password" v-model="senha" id="senha" name="senha" class="form-control custom-input" required>
+          <label for="password" >Password:</label>
+          <input type="password" v-model="password" id="password" name="password" class="form-control custom-input" required>
         </div>
-  
+
         <div class="col-12 text-center">
         <button type="submit" class="btn text-light roboto-bold fs-3">Login</button>
       </div>
       </form>
     </div>
 </template>
-  
