@@ -34,24 +34,24 @@ const clearForm = () => {
     <div>
       <h2 class="fw-bolder pb-2">Product Registration</h2>
       <form @submit.prevent="submitForm" class="row g-3">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <label for="productName">Product Name:</label>
-          <input type="text" v-model="productName" id="productName" class="form-control" required>
+          <input type="text" v-model="productName" id="productName" class="form-control custom-input" required>
         </div>
   
         <div class="col-md-6">
           <label for="productDescription">Description:</label>
-          <textarea v-model="productDescription" id="productDescription" class="form-control" required></textarea>
+          <textarea v-model="productDescription" id="productDescription" class="form-control custom-input" required></textarea>
         </div>
   
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="productPrice">Price ($):</label>
-          <input type="number" v-model="productPrice" id="productPrice" class="form-control" required>
+          <input type="number" v-model="productPrice" id="productPrice" class="form-control custom-input" required>
         </div>
   
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="productCategory">Category:</label>
-          <select v-model="productCategory" id="productCategory" class="form-select" required>
+          <select v-model="productCategory" id="productCategory" class="form-select custom-select" required>
             <option value="" disabled>Select category</option>
             <option value="Sneakers">Sneakers</option>
             <option value="Casual">Casual</option>
@@ -59,13 +59,13 @@ const clearForm = () => {
           </select>
         </div>
   
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="productQuantity">Quantity:</label>
-          <input type="number" v-model="productQuantity" id="productQuantity" class="form-control" required>
+          <input type="number" v-model="productQuantity" id="productQuantity" class="form-select custom-select" required>
         </div>
   
         <div class="col-12 text-center">
-          <button type="submit" class="btn btn-primary">Register Product</button>
+          <button type="submit" class="btn text-light roboto-bold fs-3">Register Product</button>
         </div>
       </form>
     </div>
