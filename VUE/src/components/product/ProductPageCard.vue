@@ -17,7 +17,7 @@ const props = defineProps(['name','description','price','quantity','category','i
         <span class="fs-5">{{ props.quantity }} Units left</span>
         <p class="fs-3">R$ {{ props.price }}</p>
 
-        <div class="justify playfair-display fw-medium d-flex">
+        <div class="justify playfair-display fw-bold d-flex">
         {{ props.description}}
         </div>
 
