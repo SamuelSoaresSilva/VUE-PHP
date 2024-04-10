@@ -5,7 +5,6 @@ import { useAddLetter } from '@/composables/useAddLetter.js'
 import UserRegisterForm from '@/components/user/UserRegisterForm.vue'
 import AppTitleButton from '@/components/AppTitleButton.vue'
 import UserLoginForm from '@/components/user/UserLoginForm.vue'
-import UserUpdateForm from '@/components/user/UserUpdateForm.vue'
 
 const havesAccount = ref(false);
 const loginMsg = ref("Already have an account? \nLog in by clicking below.")
@@ -43,8 +42,7 @@ watch(havesAccount,() => {
       </section>
       <section class="col bg-dark bg-opacity-50 rounded-4 p-4 align-content-center">
         <UserRegisterForm v-if="!havesAccount"/>
-        <!-- <UserLoginForm v-else/> -->
-        <UserUpdateForm v-else/>
+        <UserLoginForm v-else/>
       </section>
     </section>
     <br>
