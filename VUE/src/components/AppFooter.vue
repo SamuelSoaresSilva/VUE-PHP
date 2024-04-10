@@ -23,32 +23,37 @@ watch($route,()=>{
             <a href="https://github.com/SamuelSoaresSilva/VUE-PHP" target="_blank" class="bi-github header-title fs-1"></a>
           </div>
         </nav>
-        <nav class="col bg-light">
-          <div class="d-flex flex-column">
+        <div class="col bg-light">
             <span class="fs-2">Pages</span>
-            <router-link :to="{ name: 'about' }"
-            class="link playfair-display fw-bolder"
-            >
-              About.
-            </router-link>
-            <router-link :to="{ name: 'notFound' }"
-            class="link fw-light"
-            >
-              Not found
-            </router-link>
-            <router-link :to="{ name: 'user-register' }"
-                         class="link"
-            >
-              [ Register ].
-            </router-link>
-            <router-link :to="{ name: 'cart' }"
-                         class="link fw-bolder"
-            >
-              Cart
-            </router-link>
+            <nav class="row">
+              <router-link :to="{ name: 'about' }"
+                           class="link playfair-display fw-bolder"
+              >
+                About.
+              </router-link>
+              <router-link :to="{ name: 'notFound' }"
+                           class="link fw-light"
+              >
+                Not found
+              </router-link>
+              <router-link :to="{ name: 'user-register' }"
+                           class="link"
+              >
+                [ Register ].
+              </router-link>
+              <router-link :to="{ name: 'cart' }"
+                           class="link fw-bolder"
+              >
+                Cart
+              </router-link>
+              <router-link :to="{ name: 'user-update' }"
+                           class="link fw-bolder"
+              >
+                USER UPDATE
+              </router-link>
+            </nav>
           </div>
-        </nav>
-      </div>
+        </div>
       <hr/>
       <div class="roboto-bold text-center">
         NoNick x NoStore

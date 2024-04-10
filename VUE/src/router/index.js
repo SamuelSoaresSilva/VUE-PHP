@@ -5,6 +5,7 @@ import NotFound from '@/components/utiils/NotFound.vue'
 import RegisterView from '@/views/user/RegisterLoginView.vue'
 import CartView from '@/views/CartView.vue'
 import ProductView from "@/views/ProductView.vue";
+import UpdateLoginView from "@/views/user/UpdateLoginView.vue";
 
 // for disableHeader use meta:{disableHeader:true}
 
@@ -55,8 +56,8 @@ const routes = createRouter({
     },
 
       {
-      //transform userId in variable with :userId
-      path: '/userId/cart',
+      //transform Id in variable with :userId
+      path: '/user/id/cart',
       name: 'cart',
       component: CartView,
       meta:{
@@ -64,11 +65,21 @@ const routes = createRouter({
       }
     },
     {
+      //transform Id in variable with :userId
+      path: '/user/id/update-data',
+      name: 'user-update',
+      component: UpdateLoginView,
+      meta:{
+        title: 'User',
+        disableFooter: true
+      }
+    },
+    {
       path: '/product/:id',
       name: 'product-page',
       component: ProductView,
       meta:{
-        title: 'Product'
+        title: 'Product',
       }
     }
   ]
