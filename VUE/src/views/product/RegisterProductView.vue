@@ -1,6 +1,7 @@
 <script setup>
 import UserUpdateForm from "@/components/user/UserUpdateForm.vue";
 import AppBackgroundGif from "@/components/AppBackgroundGif.vue";
+import ProductRegisterForm from "@/components/product/ProductRegisterForm.vue";
 </script>
 
 <template>
@@ -8,8 +9,7 @@ import AppBackgroundGif from "@/components/AppBackgroundGif.vue";
   <AppBackgroundGif>
     <section class="row w-75 gap-2">
       <section class="col bg-dark bg-opacity-50 rounded-4 p-4 background-blur align-content-center">
-<!--        formularioProduto-->
-        <user-update-form></user-update-form>
+        <ProductRegisterForm/>
       </section>
     </section>
   </AppBackgroundGif>
