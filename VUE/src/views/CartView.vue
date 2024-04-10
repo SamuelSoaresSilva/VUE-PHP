@@ -36,12 +36,12 @@ const produtos = [
   <cart-container>
     <product-cart-card v-for="product in produtos"
                        :key="product.id"
-                       :nome="product.nome"
+                       :name="product.nome"
                        :price="product.preco"
                        :image="product.imagem"
-    >
-
-    </product-cart-card>
+                       :category="product.categoria"
+                       :id="product.id"
+    />
   </cart-container>
 </app-view-page>
 </template>

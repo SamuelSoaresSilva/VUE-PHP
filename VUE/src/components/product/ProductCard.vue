@@ -16,7 +16,7 @@
         >
       </div>
       <div class="roboto-bold border bg-dark d-flex flex-column px-3 py-2 text-light">
-          <span>
+          <span class="max-characters">
             {{ props.name }}
           </span>
         <span class="text-end">
@@ -37,6 +37,11 @@
 .product-card:hover{
   width: 16.5rem;
   height: auto;
+}
+.max-characters{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 </style>
