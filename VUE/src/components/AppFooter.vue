@@ -51,6 +51,11 @@ watch($route,()=>{
               >
                 USER UPDATE
               </router-link>
+              <router-link :to="{ name: 'product-register' }"
+                           class="link fw-medium"
+              >
+                Product Register
+              </router-link>
             </nav>
           </div>
         </div>

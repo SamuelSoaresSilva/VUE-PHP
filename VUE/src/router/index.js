@@ -4,8 +4,9 @@ import AboutView from '@/views/AboutView.vue';
 import NotFound from '@/components/utiils/NotFound.vue'
 import RegisterView from '@/views/user/RegisterLoginView.vue'
 import CartView from '@/views/CartView.vue'
-import ProductView from "@/views/ProductView.vue";
+import ProductView from "@/views/product/ProductView.vue";
 import UpdateLoginView from "@/views/user/UpdateLoginView.vue";
+import RegisterProductView from "@/views/product/RegisterProductView.vue";
 
 // for disableHeader use meta:{disableHeader:true}
 
@@ -45,7 +46,7 @@ const routes = createRouter({
     },
 
     {
-      path: '/user/register',
+      path: '/user/login',
       name: 'user-register',
       component: RegisterView,
       meta: {
@@ -80,6 +81,15 @@ const routes = createRouter({
       component: ProductView,
       meta:{
         title: 'Product',
+      }
+    },
+    {
+      path: '/admin/product/register',
+      name: 'product-register',
+      component: RegisterProductView,
+      meta:{
+        title: 'Reg. product',
+        disableFooter: true
       }
     }
   ]
