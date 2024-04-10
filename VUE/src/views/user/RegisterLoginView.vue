@@ -5,8 +5,7 @@ import { useAddLetter } from '@/composables/useAddLetter.js'
 import UserRegisterForm from '@/components/user/UserRegisterForm.vue'
 import AppTitleButton from '@/components/AppTitleButton.vue'
 import UserLoginForm from "@/components/user/UserLoginForm.vue";
-
-const havesAccount = ref(false);
+const havesAccount = ref(true);
 const loginMsg = ref("Already have an account? \nLog in by clicking below.")
 const registerMsg = ref("Have no account yet? \n  Create by clicking below.")
 const showMsg = ref(havesAccount.value ? registerMsg.value : loginMsg.value)

@@ -18,7 +18,7 @@ const product = {
 <template>
   <AppViewPage>
     <img
-        src='@/assets/images/backgroundWine.jpg'
+        src='../../assets/images/backgroundWine.jpg'
         class="w-100 z-n1"
         alt="background"
         @dragstart.prevent
