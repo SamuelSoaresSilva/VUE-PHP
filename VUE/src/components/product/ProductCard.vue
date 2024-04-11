@@ -39,10 +39,6 @@
   width: 16.5rem;
   height: auto;
 }
-.max-characters{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+
 
 </style>

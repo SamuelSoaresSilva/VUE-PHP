@@ -51,4 +51,9 @@ button {
     padding-left: 0.5rem;
     color: #dfa2ad;
 }
+.max-characters{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
