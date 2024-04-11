@@ -1,3 +1,7 @@
 # NoStore
 
-## to run de project, open install dependences.bat, after that open run project.bat
+## Abra o cmd nesta pasta e execute o seguinte script:
+
+cd VUE
+npm i
+npm run dev
