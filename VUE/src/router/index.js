@@ -88,7 +88,7 @@ const routes = createRouter({
       name: 'product-register',
       component: RegisterProductView,
       meta:{
-        title: 'Reg. product',
+        title: 'Product',
         disableFooter: true
       }
     }
