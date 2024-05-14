@@ -4,5 +4,6 @@
     background-repeat: no-repeat;
 }
 .blur-container{
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3rem);
 }

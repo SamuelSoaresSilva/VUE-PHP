@@ -12,10 +12,12 @@ const props = defineProps(['name','description','price','quantity','category','i
       </div>
 
 
-      <div class="d-flex flex-column py-2 roboto-bold">
-        <span class="fs-1"> {{ props.name }}</span>
-        <span class="fs-5">{{ props.quantity }} Units left</span>
-        <p class="fs-3">R$ {{ props.price }}</p>
+      <div class="py-2 roboto-bold">
+        <div class="d-flex flex-column">
+          <span class="fs-1"> {{ props.name }}</span>
+          <span class="fs-5">{{ props.quantity }} Units left</span>
+          <p class="fs-3">R$ {{ props.price }}</p>
+        </div>
 
         <div class="justify playfair-display fw-bold d-flex">
         {{ props.description}}

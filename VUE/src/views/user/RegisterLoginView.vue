@@ -56,6 +56,7 @@ watch(havesAccount,() => {
 }
 .background-blur{
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(3px);
 }
 .switch-button{
 
